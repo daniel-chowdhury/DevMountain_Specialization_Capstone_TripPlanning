@@ -1,0 +1,39 @@
+.available_flight_card {
+    background-color:azure;
+}
+
+.afc {
+    background-color:deepskyblue;
+    width: 11rem;
+    height: 15rem;
+}
+
+body {
+    background-color: azure;
+}
+
+.menu_stuff {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.menu_stuff_two {
+    font-size: 1.5rem;
+    font-style: italic;
+    
+}
+
+.spacer {
+    height: 5vh;
+}
+
+.spacer_three {
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.spacer_two {
+    height: 3vh;
+}
