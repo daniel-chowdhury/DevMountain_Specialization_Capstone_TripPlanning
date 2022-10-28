@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
     public List<String> register(User user) {
         List<String> response = new ArrayList<>();
         userRepository.saveAndFlush(user);
-        response.add("http://localhost:8080/loginpage.html");
+        response.add("https://dm-danchowdhury-airline-trips.herokuapp.com/loginpage.html");
         return response;
     }
 
@@ -35,7 +35,7 @@ public class UserServiceImpl implements UserService {
         List<String> response = new ArrayList<>();
         if (userOptional.isPresent()) {
             if (passwordEncoder.matches(user.getPassword(), userOptional.get().getPassword())) {
-                response.add("http://localhost:8080/homepage.html");
+                response.add("https://dm-danchowdhury-airline-trips.herokuapp.com/homepage.html");
                 response.add(String.valueOf(userOptional.get().getId()));
                 response.add(String.valueOf(userOptional.get().getUsername()));
             } else {
