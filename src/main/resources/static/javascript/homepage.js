@@ -16,7 +16,7 @@ if (!userId) {
 }
 let welcome_user = document.getElementById("welcome")
 welcome_user.innerHTML = `Welcome back<br>${username}`
-const baseUrl = "http://localhost:8080/api/trips/v1/"
+const baseUrl = "https://dm-danchowdhury-airline-trips.herokuapp.com/api/trips/v1/"
 const headers = {
     'Content-Type': 'application/json'
 }

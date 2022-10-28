@@ -6,7 +6,7 @@ const headers = {
     'Content-Type':'application/json'
 }
 
-const baseUrl = 'http://localhost:8080/api/trips/v1/user'
+const baseUrl = 'https://dm-danchowdhury-airline-trips.herokuapp.com/api/trips/v1/user'
 
 const handleSubmit = async (e) =>{
     e.preventDefault()
